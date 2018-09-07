@@ -9,13 +9,11 @@ function formatCurrency(amount) {
     const dollars = Math.floor(amount);
     const cents = Math.floor((amount - dollars) * 100).toString().padEnd(2, '0');
     return `$${dollars.toLocaleString()}.${cents}`;
-    console.log('>0',amount)
   }
 
   const dollars = Math.ceil(amount);
   const cents = Math.floor((amount - dollars) * 100 * -1).toString().padEnd(2, '0');
   return `-$${(dollars * -1).toLocaleString()}.${cents}`
-  console.log('0',amount)
 }
 
 
