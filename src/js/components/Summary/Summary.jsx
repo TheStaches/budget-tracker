@@ -25,7 +25,7 @@ export default class Summary extends React.Component {
     const expenseTotal = calculateSum(expenseItems);
     const difference = Math.round(incomeTotal - expenseTotal)
 
-    return(
+    return (
       <div className='card border-info mb-3'>
         <div className='card-header text-white bg-info'>Summary</div>
         <div className='card-body'>
